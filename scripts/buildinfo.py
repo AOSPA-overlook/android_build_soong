@@ -78,8 +78,7 @@ def main():
   # build_desc is human readable strings that describe this build. This has the same info as the
   # build fingerprint.
   # e.g. "aosp_cf_x86_64_phone-userdebug VanillaIceCream MAIN eng.20240319.143939 test-keys"
-  build_desc = f"{option.product}-{option.build_variant} {option.platform_version} " \
-               f"{option.build_id} {build_number} {build_version_tags}"
+  build_desc = f"{option.build_id} {build_number}"
 
   platform_preview_sdk_fingerprint = option.platform_preview_sdk_fingerprint_file.read().strip()
 
